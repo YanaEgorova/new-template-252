@@ -1,0 +1,130 @@
+.products {
+    text-align: center;
+    padding: 10rem 0;
+    position: relative;
+    z-index: 2;
+}
+.hero-products {
+    background-color: var(--first-brand-color);
+}
+.hero-products .products {
+    padding: 15rem 0;
+}
+.products .container {
+    position: relative;
+}
+
+.sub-title__box {
+    position: relative;
+    margin-bottom: 1rem;
+    max-width: 140rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero-products .sub-title {
+    margin-bottom: 1rem;
+}
+.success-message {
+    background-color: var(--success);
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--main-text-color);
+}
+.success-message span {
+    color: inherit;
+}
+.success-message > * {
+    font-family: inherit;
+    font-size: inherit;
+}
+.success-message--active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.product__item {
+    margin-bottom: 3rem;
+}
+.product__block {
+    padding: 1rem;
+    position: relative;
+    max-width: 35rem;
+    margin: 0 auto;
+    background: var(--main-bg-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 3rem;
+    -webkit-box-shadow: 0rem 0rem 2rem 0rem rgba(0,0,0,0.1);
+    -moz-box-shadow: 0rem 0rem 2rem 0rem rgba(0,0,0,0.1);
+    box-shadow: 0rem 0rem 2rem 0rem rgba(0,0,0,0.1);
+}
+.product__block .img {
+    display: block;
+    width: 25rem;
+    height: 25rem;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+.product__name {
+    font-size: 1.6rem;
+    display: block;
+    margin-bottom: 3rem;
+}
+
+.product__price {
+    font-size: 3rem;
+    font-family: var(--title-font);
+    position: absolute;
+    top: -2rem;
+    right: 0;
+    background-color: var(--third-brand-color);
+    color: var(--sub-text-color);
+    border-radius: 3rem;
+    padding: 0 1rem;
+}
+ .product__btn-block {
+    display: flex;
+    justify-content: center;
+}
+.product__btn-block .btn {
+    margin: 0;
+    padding: 1rem 1.5rem;
+    background-color: transparent;
+    color: var(--fourth-brand-color);
+    border: .3rem solid var(--fourth-brand-color);
+} 
+.product__btn-block .btn--first {
+    margin-right: 2rem;
+} 
+
+
+@media screen and (min-width: 1440px) { 
+    .product__btn:hover {
+        transform: scale(1.1);
+    }
+    .products__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .product__item {
+        width: 24%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
